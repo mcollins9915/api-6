@@ -1,0 +1,22 @@
+<%- include('../partials/header'); %>
+<main class="main main-colors container">
+    <h2 class="main-h2"><%= name %></h2>
+    <section class="section section-colors">
+        <div class="row">
+            <% data.forEach(item => { %>
+            <div class="col-md-4">
+                <a href="/colors/<%= item.id %>">
+                    <div class="color-box" style="background-color: <%= item.hex %>">
+
+                    </div>
+            </a>
+                <figcaption class="figcap figcap-colors"><%= item.name %></figcaption>
+            </div>
+            
+            
+            <% }) %>
+        </div>
+    </section>
+</main>
+
+<%- include('../partials/footer'); %>

@@ -1,0 +1,11 @@
+<%- include('../partials/header'); %>
+
+<main class="main main-single container">
+    <h2 class="main-h2 text-center"><%= data.name %></h2>
+    <h2 class="main-h2 text-center" >Hex: <span style="color: <%= data.hex %>;"><%= data.hex %></span></h2>
+    <div class="color-box" style="background-color: <%= data.hex %>">
+
+    </div>
+</main>
+
+<%- include('../partials/footer'); %>
